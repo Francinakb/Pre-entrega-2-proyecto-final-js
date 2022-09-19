@@ -2,7 +2,7 @@ const aceites = [
     {
         nombre: 'Crema Corporal Royal para Dolores Musculares y Articulares 50gr 39,9%',
         precio: 2699,
-        img: "../img/productos1.png",
+        img: "../img/productos3.png",
         descripcion: 'Crema Corporal Royal CBD - Importada 39,9% de CBD 50gr. Crema Corporal Royal Para CBD es muy efectiva en los dolores de origen muscular o reumático, y en cuadros dermatológicos como urticarias, dermatitis o psoriasis. Tiene propiedades relajantes, antiinflamatorias y antioxidantes.',
         id: 0,
         cantidad: 0
@@ -21,11 +21,20 @@ const aceites = [
     {
         nombre: 'Aceite Sublingual Royal Premium 39,9% 30ml',
         precio: 6599,
-        img: "../img/productos3.png",
+        img: "../img/productos2.png",
         descripcion: 'Aceite Sublingual Royal CBD de 39.9% (cáñamo) ROYAL un producto 100% medicinal con propiedades curativas increíbles. Uno de los aceites con más porcentaje de CBD del mercado (39,9%) La naturaleza no se equivoca, cada elemento natural tiene increíbles beneficios. Por ejemplo, la planta cannabinoide CBD te ofrece estos: antidepresivo, trastornos de bipolaridad, regula dolores crónicos, estimula el crecimiento óseo, suprime Nauseas y vómitos, ayuda a controlar la epilepsia, reducir el riesgo de obstrucción de arterias, alivia las migrañas.',
         id: 2,
         cantidad: 0
 
+    },
+
+        {
+        nombre: 'Aceite Sublingual Premium 39,9% 10ml',
+        precio: 2649,
+        img: "../img/productos1.png",
+        descripcion: 'Aceite Sublingual Rojo CBD Royal Importado 10% de CBD 10ml. Aceite Sublingual Rojo CBD de 10% (cáñamo) ROYAL un producto 100% medicinal con propiedades curativas increíbles. Uno de los aceites con más porcentaje de CBD del mercado (39,9%) La naturaleza no se equivoca, cada elemento natural tiene increíbles beneficios. Por ejemplo, la planta cannabinoide CBD te ofrece estos: antidepresivo, trastornos de bipolaridad, regula dolores crónicos, estimula el crecimiento óseo, suprime Nauseas y vómitos, ayuda a controlar la epilepsia, reducir el riesgo de obstrucción de arterias, alivia las migrañas.',
+        id: 3,
+        cantidad: 0
 
     },
 
