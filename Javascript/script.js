@@ -42,16 +42,16 @@ const aceites = [
 
 // utilizo foreach() para iterar sobre los elementos de mi arreglo y ver la lista de productos
 
-const nombres = [
-    "Aceite sublingual Premium",
-    "Aceite sublingual Royal Premium",
-    "Crema corporal para dolores musculares y articulares",
-    "Aceite sublingual Rojo"
-]
+// const nombres = [
+//     "Aceite sublingual Premium",
+//     "Aceite sublingual Royal Premium",
+//     "Crema corporal para dolores musculares y articulares",
+//     "Aceite sublingual Rojo"
+// ]
 
-nombres.forEach((nom) => {
-    console.log(nom)
-})
+// nombres.forEach((nom) => {
+//     console.log(nom)
+// })
 
 
 // creo una constante con un arreglo, con objetos dentro, donde va a haber distintos productos
@@ -62,6 +62,48 @@ const listaProductos = [
     { nombre: "Crema corporal para dolores musculares y articulares", porcentajeCBD: "39,9%", contenido: "50gr", precio: 2699 },
     { nombre: "Aceite sublingual Rojo", porcentajeCBD: "10%", contenido: "10ml", precio: 2649 }
 ]
+
+// spread
+// por ejemplo si tuviera una nueva lista de productos, podria unificarlas con spread
+
+const listaProductos2 = [
+    { nombre: "Aceite sublingual Premium2", porcentajeCBD: "39,9%", contenido: "10ml", precio: 3749 },
+    { nombre: "Aceite sublingual Royal Premium2", porcentajeCBD: "39,9%", contenido: "30ml", precio: 6599 },
+    { nombre: "Crema corporal para dolores musculares y articulares2", porcentajeCBD: "39,9%", contenido: "50gr", precio: 2699 },
+    { nombre: "Aceite sublingual Rojo2", porcentajeCBD: "10%", contenido: "10ml", precio: 2649 }
+]
+
+const productos = [...listaProductos, ...listaProductos2]
+
+const todosLosProductos = {
+    ...productos
+}
+
+console.log(todosLosProductos)
+
+// desestructuracion de array 
+
+const [a, b, c, d] = listaProductos
+
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+
+// desestructuracion de parametro
+
+const unProducto = { 
+    nombre: "Aceite sublingual Premium", 
+    porcentajeCBD: "39,9%", 
+    contenido: "10ml", 
+    precio: 3749 
+}
+const desestructurar = (item) => {
+    const {nombre, porcentajeCBD, contenido, precio} = item
+    console.log(nombre, porcentajeCBD, contenido, precio)
+}
+
+desestructurar (unProducto)
 
 // utilizo map() para poder modificar en un futuro, de ser necesario, la informacion, por ejemplo de los precios sin descuento
 
